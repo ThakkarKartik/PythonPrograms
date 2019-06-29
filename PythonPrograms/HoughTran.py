@@ -1,4 +1,3 @@
-from PIL import Image
 from matplotlib.pylab import *
 import numpy as np
 import matplotlib.pyplot as plt

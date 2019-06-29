@@ -14,7 +14,7 @@
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>CondaEnv|CondaEnv|conda_python</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,9 +29,6 @@
     <Compile Include="DDALineGeneration.py" />
     <Compile Include="DiscoO.py" />
     <Compile Include="getshowimage.py" />
-    <Compile Include="GUIpy.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="HoughTran.py">
       <SubType>Code</SubType>
     </Compile>
@@ -39,11 +36,23 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MatlabIP.py" />
+    <Compile Include="pandas_sample.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PILTest.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonPrograms.py" />
+    <Compile Include="tensor2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TensorFlowML.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TestCV2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="plotting.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="var_list.py">
@@ -52,20 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="02_h.jpg" />
-    <Content Include="GUIpy.xaml">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env\">
-      <Id>env</Id>
-      <Version>3.7</Version>
-      <Description>env (Python 3.7 (64-bit))</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X64</Architecture>
-    </Interpreter>
+    <InterpreterReference Include="CondaEnv|CondaEnv|conda_python" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

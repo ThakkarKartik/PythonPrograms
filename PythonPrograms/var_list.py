@@ -9,3 +9,5 @@ names = ['One','Two','Three','Four']
 ages = [10,20,30,40]
 name_ages = [names,ages]
 print(name_ages)
+cnt = names.count
+print(cnt)
