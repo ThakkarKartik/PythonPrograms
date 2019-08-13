@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>83d5a7af-a4e4-4b0e-90fa-df1b05ebc06b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PILTest.py</StartupFile>
+    <StartupFile>image_processing\PILTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,20 +31,20 @@
     <Compile Include="machine_learning\find_entropy.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="getshowimage.py" />
-    <Compile Include="HoughTran.py">
+    <Compile Include="image_processing\getshowimage.py" />
+    <Compile Include="image_processing\HoughTran.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="LinearSearch.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="machine_learning\LinReg.py" />
-    <Compile Include="MatlabIP.py" />
+    <Compile Include="image_processing\MatlabIP.py" />
     <Compile Include="pagefault.py" />
     <Compile Include="pandas_sample.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PILTest.py">
+    <Compile Include="image_processing\PILTest.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonPrograms.py" />
@@ -55,10 +55,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tep.py" />
-    <Compile Include="TestCV2.py">
+    <Compile Include="image_processing\TestCV2.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="plotting.py">
+    <Compile Include="image_processing\plotting.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="udf.py" />
@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="machine_learning\" />
+    <Folder Include="image_processing\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
