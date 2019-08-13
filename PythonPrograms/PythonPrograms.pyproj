@@ -28,6 +28,9 @@
     <Compile Include="BrasanhamLineGeneration.py" />
     <Compile Include="DDALineGeneration.py" />
     <Compile Include="DiscoO.py" />
+    <Compile Include="machine_learning\find_entropy.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="getshowimage.py" />
     <Compile Include="HoughTran.py">
       <SubType>Code</SubType>
@@ -35,7 +38,9 @@
     <Compile Include="LinearSearch.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="machine_learning\LinReg.py" />
     <Compile Include="MatlabIP.py" />
+    <Compile Include="pagefault.py" />
     <Compile Include="pandas_sample.py">
       <SubType>Code</SubType>
     </Compile>
@@ -43,18 +48,20 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonPrograms.py" />
-    <Compile Include="tensor2.py">
+    <Compile Include="machine_learning\tensor2.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TensorFlowML.py">
+    <Compile Include="machine_learning\TensorFlowML.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tep.py" />
     <Compile Include="TestCV2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="plotting.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="udf.py" />
     <Compile Include="var_list.py">
       <SubType>Code</SubType>
     </Compile>
@@ -64,6 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|conda_python" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="machine_learning\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
